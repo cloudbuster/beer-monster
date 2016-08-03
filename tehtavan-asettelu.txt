@@ -1,0 +1,26 @@
+Harjoitus5. Jatketaan harjoitusta 4.
+
+a) Luo uusi Sprite-olio (bottle) ja laita se rootScene:lle niin että näet sen 
+   pelissä. Kuvat ovat img-kansiossa. (done)
+
+b) Muunna koodi sellaiseksi että pelissä on kymmenen pulloa satunnaisissa 
+   paikoissa peliruudulla. Laita pullot taulukkomuuttujaan ja sijoita ne 
+   silmukkaa käyttäen rootScenelle satunnaisiin x,y-sijainteihin. (done)
+
+c) Luo uusi konstruktorifunktio nimeltään inventory. Tee siihen yksi attribuutti 
+   (bottles) ja kaksi metodia (addBottle, getNumOfBottles). Alussa bottles on 0. 
+   addBottle lisää bottle-attribuutin arvoa yhdellä ja getNumOfBottles palauttaa 
+   bottles-attribuutin arvon.
+
+d) Luo uusi Label-olio: inventoryLabel. Laita se peliruudun oikeaan yläkulmaan. 
+   Hae sinne pullojen lukumäärä inventory-oliosta (getNumOfBottles).
+
+e) Katso collision detection -koodi  ENTER_FRAME eventlistenerin lopusta ja 
+   muunna se "peliin" sopivaksi. Tee REMOVED_FROM_SCENE eventlistener jossa 
+   kutsut addBottle-metodia niin että pullo katoaa ja pullojen lukumäärä 
+   inventoryssä lisääntyy kun pelihahmo törmää pulloon. Päivitä 
+   InventoryLabel.text ENTER_FRAME eventlistenerissä, niin että kun peli alkaa 
+   Bottles:0.
+
+Lopputulos: Kun pelihahmo osuu pulloon, pullo katoaa ja pullojen lkm inventoryssä 
+lisääntyy. Ohjelman suoritus voisi näyttää tältä.

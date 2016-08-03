@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="">
+    </head>
+    <body>
+
+        <script>
+        
+        /**
+         * This little code snippet is to test how to create an array of 
+         * separate objects by using constructor notation.
+         */
+        
+        // Creating array for objects.
+        var myArray = new Array();
+        
+        // Using Constructor notation for creating multiple objects.
+        function myObjConstruct(x, y){
+            this.x = x;
+            this.y = y;
+        };
+        
+        // Pushing separate objects to array.
+        for (var i = 0; i < 100; i += 1){
+            myArray.push(new myObjConstruct(Math.floor(Math.random()*100), Math.floor(Math.random()*100)));
+        };
+        
+        // 
+        for (var anObj in myArray){
+            document.write("X is: " + myArray[anObj].x + ", Y is: " + myArray[anObj].y + "<br>");
+        }
+        
+        
+        
+        </script>
+
+    </body>
+</html>
